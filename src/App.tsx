@@ -11,6 +11,9 @@ import AdminLogin from './Pages/Admin/Login/AdminLogin';
 import JobPosts from './Pages/Admin/JobPosts';
 // import AddMunicipality from './Pages/Admin/AddMunicipality';
 import Municipalities from './Pages/Admin/Municipalities';
+import Landingpage from './Pages/User/LandingPage/Landingpage';
+import ProfileCard from './Pages/User/LandingPage/ProfileCard';
+import Footer from './Pages/User/Footer/Footer';
 const queryClient = new QueryClient();
 
 function App() {
@@ -26,8 +29,11 @@ function App() {
           <Route path="/registration" element={<Registration/>} />
           <Route path="/jobPosts" element={<JobPosts/>} />
           <Route path="/municipalities" element={<Municipalities/>} />
-          {/* <Route path="/addMunicipality" element={<AddMunicipality/>} /> */}
-          {/* Route for the Users component */}
+          <Route path='landingpage' element={<Landingpage/>}/>
+          <Route path='profilecard' element={<ProfileCard/>}/>
+          <Route path='footer' element={<Footer/>}/>
+          {/* <Route path="/addMunicipality" element={<AddMunicipality/>} /> *}
+          // {/* Route for the Users component */}
           {/* <Route path="/" element={<Users />} /> */}
         </Routes>
       </Router>
