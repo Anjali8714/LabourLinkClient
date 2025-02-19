@@ -189,7 +189,7 @@ const Landingpage = () => {
         />
       </div>
       <Footer />
-      <div className="bg-[#FFDDCC] w-full h-10"></div>
+      <div className="bg-[#9b7ab6] w-full h-10 mt-4"></div>
     </div>
   );
 };
