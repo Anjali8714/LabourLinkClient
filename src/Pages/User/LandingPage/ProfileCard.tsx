@@ -1,5 +1,5 @@
+import React from "react";
 import { MapPin, Star } from "lucide-react";
-import { FC } from "react";
 
 interface WorkerCardProps {
   id: string;
@@ -10,7 +10,7 @@ interface WorkerCardProps {
   imageUrl: string;
 }
 
-const ProfileCard: FC<WorkerCardProps> = ({
+const ProfileCard:React.FC<WorkerCardProps> = ({
   name,
   location,
   rating,

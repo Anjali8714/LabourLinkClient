@@ -2,8 +2,9 @@ import Footer from "../Footer/Footer";
 import { BiLogIn } from "react-icons/bi";
 import ProfileCard from "./ProfileCard";
 import Works from "./Works";
+import React from "react";
 
-const Landingpage = () => {
+const Landingpage:React.FC = () => {
   return (
     <div className="h-screen relative bg-white">
       <div className="flex justify-between items-center px-10 py-10 ml-10">

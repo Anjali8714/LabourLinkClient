@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
     <div className="h-48">
       <div className="flex justify-between md:w-4/5 mx-auto mt-10">

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React from "react";
 
 interface WorksCardProps {
   imageUrl: string;
@@ -6,7 +6,7 @@ interface WorksCardProps {
   type: string;
   noOf: string;
 }
-const Works: FC<WorksCardProps> = ({ imageUrl, work, type, noOf }) => {
+const Works:React.FC<WorksCardProps> = ({ imageUrl, work, type, noOf }) => {
   return (
     <div className="w-52 h-56 bg-[#E0E0E0] rounded-2xl shadow-[10px_8px_5px_rgb(128,128,128)] p-4 relative">
       <div className="w-20 h-20 mx-auto rounded-full border-4 border-purple-500 overflow-hidden">

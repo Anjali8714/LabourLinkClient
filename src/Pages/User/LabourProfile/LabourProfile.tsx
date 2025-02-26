@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { MdOutlineFileUpload } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
-const LabourProfile = () => {
+const LabourProfile:React.FC = () => {
   const navigate = useNavigate();
   const [fullName, setFullName] = useState<string>("");
   const [phoneNo, setPhoneNo] = useState<string>("");
@@ -69,6 +69,7 @@ const handleWorkImages = (event:React.ChangeEvent<HTMLInputElement>, index:numbe
   const  handleRegister = () => {
     navigate("/myacount")
   }
+  
   return (
     <div className="max-w-6xl mx-auto p-8">
       <h1 className="font-bold text-3xl text-[#6300B3] font-postno mb-8">
